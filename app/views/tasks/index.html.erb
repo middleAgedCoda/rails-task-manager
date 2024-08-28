@@ -1,0 +1,7 @@
+<div>
+<h1>Task Manager</h1>
+
+<p><% @tasks.each do |task| %></p>
+<li><%= link_to task.name, show_path(task) %></li>
+<% end %>
+</div>
